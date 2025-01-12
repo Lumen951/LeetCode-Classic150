@@ -1,5 +1,16 @@
+#include <string>
+
+#include <vector>
+
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
 public:
+    /**
+     * @param nums2 The second sorted integer array with n elements.
+     */
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         for(int i=0; i != n; i++){
             nums1[m + i] = nums2[i];
@@ -7,5 +18,6 @@ public:
         sort(nums1.begin(), nums1.end());
     }
 };
+
 
 
